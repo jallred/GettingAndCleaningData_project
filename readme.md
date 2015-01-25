@@ -9,9 +9,11 @@ R script description
 The script created the tidy data for this project in the following manner:
 
 1. set the right libraries and the working directory. careful with the library order
+---R
 library(plyr)
 library(dplyr)
 setwd("~/Documents/coursera/Data Science/Getting and Cleaning Data/UCI HAR Dataset")
+---
 
 2. read the raw testing and training data
 test_raw <- read.table("test/X_test.txt")
