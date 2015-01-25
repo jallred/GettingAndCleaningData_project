@@ -14,7 +14,7 @@ Data Dictionary
 
 Variable	Description		Values	Value Explanation
 
-Subject     Subject ID 		1->N     ID for each subject
+Subject     Subject ID 		1->N	ID for each subject
 
 Activity    Activity ID     1		WALKING
                             2		WALKING_UPSTAIRS
@@ -23,7 +23,7 @@ Activity    Activity ID     1		WALKING
                             5		STANDING
                             6		LAYING
 
-tBodyAccmeanX           	-1->+1	mean body acceleration in the X direction       
+tBodyAccmeanX           	-1->+1	normalized mean body acceleration in the X direction       
 tBodyAccmeanY           	(below variables are similar)
 tBodyAccmeanZ          
 tBodyAccstdX

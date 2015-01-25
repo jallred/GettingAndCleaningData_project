@@ -2,7 +2,9 @@ Project goal
 
 The class was tasked with taking two sets of data (testing and training) which contained 
 several variables containing accelerometer and gyro data for several subjects, each of 
-which were accomplishing several tasks.
+which were accomplishing designated tasks. The testing and training data sets were joined. 
+Then, the mean and standard deviation of each measurement for each subject and activity 
+was extracted and added to the tidy data.
 
 R script description
 
@@ -19,12 +21,13 @@ setwd("~/Documents/coursera/Data Science/Getting and Cleaning Data/UCI HAR Datas
 test_raw <- read.table("test/X_test.txt")
 train_raw <- read.table("train/X_train.txt")
 
-3. read the features, then tidy up the feature names -- replace commas by underscores 
+3. read the features, then tidy up the feature names -- replace commas by underscores to
+avoid csv data issues later 
 
 features_raw <- read.table("features.txt")
 features <- gsub(",","_",features)
 
-4. apply the tidied feature names to the raw data
+4. apply the modified feature names to the raw data
 
 names(test_raw) <- features
 names(train_raw) <- features
