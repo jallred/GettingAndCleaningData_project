@@ -60,3 +60,9 @@ train_final <- mutate(train_processed, Subject=Y_train_final$Subject, Activity =
 
 joined_data <- rbind(train_final, test_final)
 final_data <- ddply(train_final,.(Subject,Activity),colwise(mean,is.numeric)) 
+
+
+Acknowledgements:
+A huge thank you to the folks on the forums who gave invaluable hints for some of the more 
+difficult parts of the project, and for the codebook examples. Special thanks to David
+Hood the Community TA.
